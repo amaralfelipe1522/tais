@@ -110,6 +110,9 @@ intents:
 
   - erro_resposta_utter
 
+  - quer_agendar
+  - cancelar_agendamento
+
 entities:
   - situacao_processo
   - lei_rouanet
@@ -906,8 +909,19 @@ templates:
 
   utter_agradecimento:
     - text: |
-          De nada, é sempre um prazer ajudar!
+          De nada, é sempre um prazer ajudar1111!
           Qual o próximo assunto que te interessa?
+
+  utter_quer_agendar:
+    - text: |
+          Claro, primeiramente me informe seu CPF.
+
+  utter_cancelar_agendamento:
+    - text: |
+          Agendamento cancelado.
+    - text: |
+          Teje cancelado.
+
 
 actions:
   - utter_default
@@ -1021,3 +1035,6 @@ actions:
   - utter_cadastro_salic_video
 
   - utter_erro_resposta_utter
+
+  - utter_quer_agendar
+  - utter_cancelar_agendamento
